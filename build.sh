@@ -4,7 +4,7 @@
 function compile() 
 {
 
-git clone --depth=1 https://github.com/anupamroy777/android_kernel_realme_RM6785.git
+git clone --depth=1 https://github.com/weixy56/kernel_realme_RM6785.git
 cd android_kernel_realme_RM6785
 
 
