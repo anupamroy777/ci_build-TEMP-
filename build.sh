@@ -13,7 +13,7 @@ export LC_ALL=C && export USE_CCACHE=1 ccache -M 100G
 export ARCH=arm64
 export KBUILD_BUILD_HOST=Anupam_Roy
 export KBUILD_BUILD_USER="Gorilla669"
-git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git clang
+git clone --depth=1 https://github.com/vijaymalav564/vortex-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
 make clean && make mrproper
