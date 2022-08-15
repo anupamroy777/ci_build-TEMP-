@@ -1,6 +1,6 @@
 #!/bin/bash
-source ~/.bashrc && source ~/.profile
-export LC_ALL=C && export USE_CCACHE=1 ccache -M 100G
+
+
 function compile() 
 {
 
@@ -8,7 +8,8 @@ git clone --depth=1 https://github.com/anupamroy777/android_kernel_realme_RM6785
 cd android_kernel_realme_RM6785
 
 
-
+source ~/.bashrc && source ~/.profile
+export LC_ALL=C && export USE_CCACHE=1 ccache -M 100G
 export ARCH=arm64
 export KBUILD_BUILD_HOST=Anupam_Roy
 export KBUILD_BUILD_USER="Gorilla669"
