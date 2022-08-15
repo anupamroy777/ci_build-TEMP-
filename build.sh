@@ -5,7 +5,7 @@ function compile()
 
 git clone --depth=1 https://github.com/anupamroy777/android_kernel_realme_RM6785.git
 cd android_kernel_realme_RM6785
-source ~/.bashrc && source ~/.profile
+
 export LC_ALL=C && export USE_CCACHE=1
 ccache -M 100G
 export ARCH=arm64
@@ -15,7 +15,7 @@ git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
 
-make O=out ARCH=arm64 RM6785_defconfig
+make ARCH=arm64 RM6785_defconfig
 
 PATH="${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}" \
 make -j$(nproc --all) O=out \
