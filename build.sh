@@ -18,7 +18,7 @@ git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git clang
 make ARCH=arm64 RM6785_defconfig
 
 PATH="${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}" \
-make -j$(nproc --all) O=out \
+make -j$(nproc --all) \
                       ARCH=arm64 \
                       CC="clang" \
                       LD=ld.lld \
