@@ -16,7 +16,7 @@ export KBUILD_BUILD_USER="Gorilla669"
 git clone --depth=1 https://gitlab.com/dakkshesh07/neutron-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
-
+make clean && make mrproper
 make 0=out ARCH=arm64 RM6785_defconfig
 
 PATH="${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}:${PWD}/clang/bin:${PATH}" \
